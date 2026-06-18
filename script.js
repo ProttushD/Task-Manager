@@ -9,6 +9,12 @@ btn.addEventListener('click' , () => {
  const value = inp.value;
  const choice = select.value;
 
+
+ if(value.trim() === ""){
+    alert("Please Add the Task first")
+    return;
+ }
+
  taskB.innerHTML += `
 
  <div class="task-box">
@@ -25,7 +31,6 @@ btn.addEventListener('click' , () => {
  `
 
 
-
-//  console.log(value,choice)
+ inp.value="";
 }) 
 
