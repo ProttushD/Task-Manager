@@ -15,6 +15,12 @@ btn.addEventListener("click", () => {
     // console.log(select.value);
 
 
+    if (inp.value.trim() === "") {
+        alert("Please Add the Task First !!");
+        return;
+    }
+
+
     const taskBox = document.createElement("div"); // with this we are creating the html structure div
     taskBox.className = "task-box"; // with this we are asigning the class name to div 
 
@@ -43,6 +49,7 @@ btn.addEventListener("click", () => {
     deleteBtn.className = "btn btn-3";
     deleteBtn.textContent = "Delete";
 
+
     textDiv.append(heading);
     btns.append(category);
     btns.append(editBtn);
@@ -51,13 +58,13 @@ btn.addEventListener("click", () => {
     taskBox.append(textDiv);
     taskBox.append(btns);
     taskB.append(taskBox);
-    
-   
 
 
 
- inp.value=""; // this will always empty the box after executions 
 
+
+
+    inp.value = "";
 
 });
 
