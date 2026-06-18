@@ -56,7 +56,7 @@ btn.addEventListener("click", () => {
 
 
 
-
+ inp.value=""; // this will always empty the box after executions 
 
 
 });
