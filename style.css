@@ -27,6 +27,46 @@ html,body{
     padding: 30px;
 }
 
+.task-count{
+    width: 67%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-count-box{
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 40px;
+    border-radius: 20px;
+    
+    background-color: #fff;
+}
+
+.task-count-box h5{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.task-count-box p{
+    font-size: 1rem;
+}
+
+.task-count-box .r{
+    color: red;
+}
+.task-count-box .g{
+    color: darkgreen;
+}
+.task-count-box .b{
+    color: blue;
+}
+
+
+
 .task-asign{
     width: 67%;
     background-color: #fff;
@@ -98,6 +138,7 @@ html,body{
     display: flex;
     flex-direction: column;
     gap: 25px;
+    overflow-y: scroll;
 }
 .task-apear h1{
 
