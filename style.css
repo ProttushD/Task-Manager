@@ -17,7 +17,7 @@ html,body{
 
 .main{
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     background-color: #eef1f7;
     display: flex;
     flex-direction: column;
@@ -277,3 +277,44 @@ background-color: #ffffff;
     color: #fff;
 }
 
+
+@media (max-width:768px) {
+
+    
+    .task-count{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .task-count-box{
+        width: 100%;
+    }
+
+    .task-asign {
+    width: 100%;
+    }
+
+    .task-asign .boxes input{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .task-asign .boxes select{
+        width: 65%;
+        margin-right: 10px;
+    }
+
+    .task-apear{
+        width: 100%;
+    }
+
+    .task-box{
+       flex-direction: column;
+       gap: 20px;
+    }
+
+    .task-box .btns{
+        display: flex;
+        gap: 5px;
+    }
+}
