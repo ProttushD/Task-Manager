@@ -25,7 +25,10 @@ html,body{
     align-items: center;
     justify-content: flex-start;
     padding: 30px;
+
+     transition: background-color .4s ease;
 }
+
 
 .main.dark{
     background-color: #000;
@@ -69,6 +72,16 @@ html,body{
 .main.dark .theme-btn{
 background-color: #ffffff;
     color: #000000;
+}
+
+.task-count-box,
+.task-asign,
+.task-apear,
+.task-box,
+.theme-btn,
+.task-asign input,
+.task-asign select{
+    transition: .3s ease;
 }
 
 .theme-btn{
@@ -284,6 +297,7 @@ background-color: #ffffff;
     .task-count{
         flex-direction: column;
         gap: 20px;
+        width: 100%;
     }
 
     .task-count-box{
@@ -314,9 +328,10 @@ background-color: #ffffff;
         width: 100%;
     }
 
-    .task-box{
+    .task-apear .task-box{
        flex-direction: column;
        gap: 20px;
+
     }
 
     .task-box .btns{
