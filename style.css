@@ -294,14 +294,20 @@ background-color: #ffffff;
     width: 100%;
     }
 
+    .task-asign .boxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .task-asign .boxes input{
         width: 100%;
         margin-bottom: 10px;
     }
 
     .task-asign .boxes select{
-        width: 65%;
-        margin-right: 10px;
+        width: 100%;
+        margin-bottom: 10px;
     }
 
     .task-apear{
