@@ -4,6 +4,21 @@ const btn = document.querySelector("#task");
 const taskB = document.querySelector(".task-apear");
 
 
+const themBtn = document.querySelector(".theme-btn"); // This is the them button declaration
+const main = document.querySelector(".main"); 
+
+themBtn.addEventListener("click" , () => { // with this we will change the background colour 
+    main.classList.toggle("dark");
+
+    if(main.classList.contains("dark")){
+        themBtn.textContent = "Light Mode";
+    }
+    else{
+         themBtn.textContent = "Dark Mode";
+    }
+});
+
+
 const totalTask = document.querySelector(".r");
 const compeleteTask = document.querySelector(".g");
 const pendingTask = document.querySelector(".b")
